@@ -13,7 +13,7 @@ async function checkWeather(city){
  
  //checking for invalid city names. 
     if(response.status = 404){
-        document.querySelector(".card__error").classList.remove("hidden") ;
+        document.querySelector(".card__error").classList.add("hidden") ;
     }
 
     var data = await response.json() ; 
