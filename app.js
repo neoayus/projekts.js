@@ -46,3 +46,9 @@ searchBtn.addEventListener("click",()=>{
         // API function call 
     checkWeather(searchBox.value) ; 
 })
+
+// the previous event "touch" isn't possible on mobile so.. 
+searchBtn.addEventListener("touchstart",()=>{
+        // API function call 
+    checkWeather(searchBox.value) ; 
+})
