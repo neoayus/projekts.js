@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+       <div class="card__search">
+         <!-- search area  -->
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+         <!-- search button icon  -->
+            <button><img src="./assets/search.png" alt="search-icon" height="25px" width="auto"> </button>
+       </div> 
+       
+       <div class="card__error hidden">
+            Invalid City Name :( 
+       </div>
+       
+       <div class="weather hidden">
+         <!-- weather icon  -->
+            <img src="./assets/rain.png" alt="" class="weather__icon">
+         <!-- temperature -->
+            <h1 class="weather__detail temp"> 00<sup>°C</sup></h1>
+         <!-- city name  -->
+            <h2 class="weather__detail city"> UK07 </h2>
+
+         <!-- Weather Details  -->
+            <div class="weather__details">
+
+             <!-- humidity  -->
+                <div class="details__col one">
+                    <img src="./assets/humidity.png" alt="img-humidity">
+                    <div>
+                        <p class="humidity">00%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+             <!-- wind Speed  -->
+                <div class="details__col two">
+                    <img src="./assets/wind.png" alt="img-wind">
+                    <div>
+                        <p class="wind">00 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+       </div>
+    </div>
+     
+ <!-- js link  -->
+    <script src="app.js"></script>
+</body>
+</html>
